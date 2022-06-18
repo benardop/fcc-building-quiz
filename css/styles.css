@@ -167,3 +167,29 @@ input {
     background: #d0d0d5;
     border: 3px solid #3b3b4f;
   }
+
+  footer {
+    background-color: #2a2a40;
+    justify-content: center;
+    display: flex;
+  }
+
+  footer,
+  footer a {
+    color: #dfdfe2;
+  }
+
+  address {
+    text-align: center;
+    padding: 0.3em;
+  }
+
+  * {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    * {
+    scroll-behavior: smooth;
+  }
+  }
