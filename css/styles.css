@@ -28,6 +28,7 @@ header {
 h1 {
     color: #f1be32;
     font-size: min(5vw, 1.2em);
+    text-align: center;
 }
 
 /* Target unordered list elements within 'nav' elements*/
@@ -35,6 +36,11 @@ h1 {
 nav > ul {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+    flex-wrap: wrap;
 }
 
 nav {
@@ -48,7 +54,9 @@ h1, h2 {
 }
 
 h2 {
-    border-bottom: 4px solid #dfdfe2;;
+    border-bottom: 4px solid #dfdfe2;
+    margin-top: 0;
+    padding-top: 60px;
 }
 
 .sr-only {
@@ -85,3 +93,51 @@ nav > ul > li:hover{
     color: #1b1b32;
     cursor: pointer;
 }
+
+main {
+    padding-top: 50px;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto 10px auto;
+	max-width: 600px;
+}
+
+.info {
+    padding: 10px 0 0 5px;
+}
+
+.formrow {
+    margin-top: 30px;
+    padding: 0 15px;
+}
+
+input {
+    font-size: 16px;
+}
+
+
+.info > label {
+    width: 10%;
+    min-width: 55px;
+}
+
+.info > label, .info > input {
+    display: inline-block;
+    text-align: right;
+}
+
+.info > input {
+    width: 50%;
+    text-align: left;
+    display: inline-block;
+}
+
+.question-block {
+    text-align: left;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 5px;
+  }
